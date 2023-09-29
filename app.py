@@ -12,8 +12,8 @@ app = Flask(__name__)
 
 #Adding File Reading Function:
 def xread(path):
-
-    path=path.strip()
+    
+    path=path.strip() #Stripper ;)..removing any spaces (leading & trailing)
 
     if (path[-3:]=="csv"):
         with open(path, 'r') as f:
