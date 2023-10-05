@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styles for the container div */
+div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styles for the form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  width: 50rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styles for the labels */
+label {
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* Styles for the input boxes */
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Styles for the file input */
+.file-input {
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Styles for the buttons */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button[type="reset"] {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+button[type="button"] {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button[type="button"]:last-child {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
